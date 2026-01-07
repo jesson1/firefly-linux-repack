@@ -60,7 +60,7 @@ fi
 # fi
 
 ../bin/afptool -pack ./ Image/update.img || pause
-../bin/rkImageMaker -RK3588 MiniLoaderAll.bin Image/update.img update.img -os_type:androidos || pause
+../bin/rkImageMaker -RK3588 Image/MiniLoaderAll.bin Image/update.img update.img -os_type:androidos || pause
 rm -rf Image/update.img
 mv update.img ../new_update.img
 echo "Making update.img OK."
